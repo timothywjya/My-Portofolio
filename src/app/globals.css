@@ -10,6 +10,7 @@
 
 /* Pastikan transisi warna halus saat ganti tema */
 html {
+  scroll-behavior: smooth;
   transition: background-color 0.3s ease;
 }
 
