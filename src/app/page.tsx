@@ -4,21 +4,18 @@ import {
   Award,
   Briefcase,
   Code2,
-  Cpu, 
+  Cpu,
   Database,
   Github,
   Globe,
   Linkedin,
   Mail,
   Menu,
+  Search,
+  ShieldCheck,
   Terminal,
   X,
-  Zap,
-  Sun,
-  Moon,
-  BarChart3,
-  ShieldCheck,
-  Search
+  Zap
 } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
@@ -48,13 +45,6 @@ export default function Portfolio() {
               <a href="#projects" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Projects</a>
               <a href="#skills" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Skills</a>
             </div>
-
-            <button 
-              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-              className="p-2 rounded-xl bg-slate-100 dark:bg-slate-800 hover:ring-2 ring-blue-500 transition-all"
-            >
-              {theme === 'dark' ? <Sun size={20} className="text-yellow-400" /> : <Moon size={20} className="text-blue-600" />}
-            </button>
 
             <button className="md:hidden p-2 text-slate-600 dark:text-slate-400" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
